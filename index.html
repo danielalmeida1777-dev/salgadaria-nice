@@ -3,36 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salgadaria Nice</title>
+<title>Salgadaria Nice | Guará-SP</title>
+
 <style>
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#0b1220;
-color:white;
-text-align:center;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:Arial,sans-serif;
+background:#050816;
+color:white;
+}
+
 .hero{
 padding:40px 20px;
+text-align:center;
 }
-img{
-max-width:100%;
+
+.hero img{
+width:100%;
+max-width:450px;
 border-radius:20px;
+margin-top:20px;
 }
-.btn{
+
+h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+p{
+font-size:1.2rem;
+color:#d1d5db;
+}
+
+.whats{
 display:inline-block;
+margin-top:25px;
 background:#D92323;
 color:white;
-padding:15px 25px;
-border-radius:10px;
+padding:15px 30px;
+border-radius:12px;
 text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:50px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.card{
+background:#111827;
+padding:15px;
+border-radius:20px;
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.card h3{
+margin-top:15px;
+}
+
+.fachada{
+width:100%;
+border-radius:20px;
 margin-top:20px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111827;
+margin-top:40px;
+}
+
+@media(min-width:768px){
+.cards{
+grid-template-columns:repeat(3,1fr);
+}
 }
 </style>
 </head>
+
 <body>
 
-<div class="hero">
+<section class="hero">
 <h1>Salgadaria Nice</h1>
 <p>Mais de 50 anos de tradição em Guará-SP</p>
 
@@ -40,11 +109,60 @@ IMG_0403.jpeg
 
 <br>
 
-<a class="btn" href="https://wa.me/551638311355">
+<a class="whats"
+href="https://wa.me/551638311355">
 Pedir pelo WhatsApp
 </a>
+</section>
+
+<section class="section">
+<h2>Os Mais Pedidos</h2>
+
+<div class="cards">
+
+<div class="card">
+IMG_0403.jpeg
+<h3>Coxinha Tradicional</h3>
+</div>
+
+<div class="card">
+IMG_0402.jpeg
+<h3>Kibe Especial</h3>
+</div>
+
+<div class="card">
+IMG_0404.jpeg
+<h3>Salgados Variados</h3>
+</div>
 
 </div>
+</section>
+
+<section class="section">
+<h2>Festas e Eventos</h2>
+
+IMG_0401.jpeg
+
+<p style="margin-top:20px;">
+Mini salgados para aniversários,
+empresas e confraternizações.
+</p>
+</section>
+
+<section class="section">
+<h2>Nossa História</h2>
+
+20261001_004156794_iOS_AIEdited%201.jpg
+
+<p style="margin-top:20px;">
+Desde 1971 levando sabor e tradição para Guará e região.
+</p>
+</section>
+
+<footer>
+<p>Salgadaria Nice • Guará-SP</p>
+<p>(16) 3831-1355</p>
+</footer>
 
 </body>
 </html>
